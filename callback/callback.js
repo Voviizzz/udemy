@@ -20,11 +20,11 @@
 //   console.log("я прошел курс");
 // }
 
-function hellUser(name, callback) {
-  console.log(`hello ${name}`);
-  callback();
-}
-function callback() {
-  console.log(`мы поздоровались с юзером`);
-}
-hellUser('Джон', callback)
+// function hellUser(name, callback) {
+//   console.log(`hello ${name}`);
+//   callback();
+// }
+// function callback() {
+//   console.log(`мы поздоровались с юзером`);
+// }
+// hellUser('Джон', callback)
