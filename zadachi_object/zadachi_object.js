@@ -82,15 +82,15 @@ const personalPlanPeter = {
 
 // P.S. Дальше по курсу мы научимся удобно обращаться из метода к самому объекту, в котором он расположен. Но пока делаем это менее удобным способом)
 
-personalPlanPeter.showAgeLang = function (obj) {
-  str = `Мне ${obj.age} лет и я владею языками:`;
-  let { languages } = obj.skills;
-  languages.forEach((lang) => {
-    str += ` ${lang.toUpperCase()}`;
-  });
+// personalPlanPeter.showAgeLang = function (obj) {
+//   str = `Мне ${obj.age} лет и я владею языками:`;
+//   let { languages } = obj.skills;
+//   languages.forEach((lang) => {
+//     str += ` ${lang.toUpperCase()}`;
+//   });
 
-  return str;
-};
-console.log(personalPlanPeter.showAgeLang(personalPlanPeter));
+//   return str;
+// };
+// console.log(personalPlanPeter.showAgeLang(personalPlanPeter));
 
 //верно

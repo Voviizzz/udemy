@@ -92,20 +92,20 @@
 
 // нужно использовать SPRED оператор !
 
-const baseCurrencies = ["USD", "EUR"];
-const additionalCurrencies = ["UAH", "RUB", "CNY"];
-function availableCurr(arr, missingCurr) {
-  //   let newArr = [];
-  let str = "Доступные валюты: \n";
-  arr.forEach((elem) => {
-    if (missingCurr !== elem) {
-      //   newArr.push(elem);
-      str += `${elem} \n`;
-    }
-  });
-  return str;
-}
-console.log(availableCurr([...baseCurrencies, ...additionalCurrencies], "CNY"));
+// const baseCurrencies = ["USD", "EUR"];
+// const additionalCurrencies = ["UAH", "RUB", "CNY"];
+// function availableCurr(arr, missingCurr) {
+//   //   let newArr = [];
+//   let str = "Доступные валюты: \n";
+//   arr.forEach((elem) => {
+//     if (missingCurr !== elem) {
+//       //   newArr.push(elem);
+//       str += `${elem} \n`;
+//     }
+//   });
+//   return str;
+// }
+// console.log(availableCurr([...baseCurrencies, ...additionalCurrencies], "CNY"));
 
 // const baseCurrencies = ['USD', 'EUR'];
 // const additionalCurrencies = ['UAH', 'RUB', 'CNY'];
