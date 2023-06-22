@@ -52,6 +52,7 @@ const movieDB = {
 
 //5)
 const list = document.querySelector(".promo__interactive-list");
+console.log(list);
 list.innerHTML = "";
 movieDB.movies.sort();
 
