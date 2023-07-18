@@ -11,6 +11,7 @@
 Отсортировать их по алфавиту 
 
 5) Добавить нумерацию выведенных фильмов */
+// const btn = form.querySelector("button");
 
 // "use strict";
 
@@ -32,13 +33,13 @@ const form = document.querySelector(".add");
 const input = document.querySelector(".adding__input");
 const checkBox = document.querySelector('[type = "checkbox"]');
 
-// const btn = form.querySelector("button");
-
 function dropAdv() {
   adv.forEach((item) => {
     item.remove();
   });
 }
+
+//Добавление события
 form.addEventListener("submit", (event) => {
   event.preventDefault();
   let newFilm = input.value;
@@ -54,6 +55,7 @@ form.addEventListener("submit", (event) => {
   refactMovieFilms(movis, moviList);
 });
 
+//Функциия вывода фильмов на страницу
 function refactMovieFilms(arr, parent) {
   parent.innerHTML = "";
   sortArr(arr);
@@ -70,12 +72,9 @@ function refactMovieFilms(arr, parent) {
     });
   });
 }
-function myBestFilm() {}
-
+//Сортировка фильмов
 function sortArr(arr) {
   arr.sort();
 }
-console.log(movis);
-
 refactMovieFilms(movis, moviList);
 dropAdv();

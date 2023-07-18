@@ -12,11 +12,11 @@ let google = document.querySelector(".google");
 //   google.style.textDecoration = "none";
 // });
 
-
-//Можно обраща
-google.addEventListener("click", nonDecoration);
+//Можно обращащаться к функции
+google.addEventListener("click", nonDecoration, { once: true }); //once делает обработку функции один раз !
 
 function nonDecoration(e) {
   e.preventDefault();
   google.style.textDecoration = "none";
 }
+ 
