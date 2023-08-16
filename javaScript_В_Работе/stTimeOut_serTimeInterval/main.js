@@ -34,17 +34,42 @@
 
 // ________________________________________________Выполнение анимации на квадрате_________________________________________
 
-const btn = document.querySelector(".btn");
-let timerId;
-let i = 0;
+// const btn = document.querySelector(".btn");
 
-function myAnimation() {
-  const elem = document.querySelector(".box");
-  let pos = 0;
-  function frame() {
-    if (pos == 300) {
-      clearInterval();
+// function myAnimation() {
+//   const elem = document.querySelector(".box");
+//   let pos = 0;
+
+//   const id = setInterval(frame, 10);
+//   function frame() {
+//     if (pos == 300) {
+//       clearInterval(id);
+//     } else {
+//       pos++;
+//       elem.style.top = pos + "px";
+//       elem.style.left = pos + "px";
+//     }
+//   }
+// }
+
+// btn.addEventListener("click", myAnimation);
+
+
+
+const btn = document.querySelector(".btn");
+function animationBox() {
+  let pos = 300;
+  const box = document.querySelector(".box");
+  const id = setInterval(myAnim, 10);
+  function myAnim() {
+    if (pos == 0) {
+      clearInterval(id);
     } else {
+      pos--;
+      box.style.top = pos + "px";
+      box.style.left = pos + "px";
     }
   }
 }
+btn.addEventListener("click", animationBox);
+console.log('sss');

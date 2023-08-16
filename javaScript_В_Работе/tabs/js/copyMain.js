@@ -13,7 +13,7 @@ window.addEventListener("DOMContentLoaded", () => {
   const btnParrent = document.querySelector(".tabheader__items");
   // Функция для скрытия контента
   function hideTabContent() {
-    tabcontent.forEach((item) => {
+    tabContent.forEach((item) => {
       item.style.display = "none";
     });
     //убираем активный класс у кнопок и ставим NONE контенту
@@ -24,7 +24,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
   //по умолчанию у нас отображается первый контент из коллекции контента и кнопки
   function showTabContent(i = 0) {
-    tabcontent[i].style.display = "block";
+    tabContent[i].style.display = "block";
     btns[i].classList.add("tabheader__item_active");
   }
   //вызываем обе функции
