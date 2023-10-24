@@ -43,4 +43,11 @@ window.addEventListener("DOMContentLoaded", () => {
       });
     }
   });
+
+  //Обращение к базе db.json
+  fetch("http://localhost:3000/menu") //получаем массив данных! 
+    .then((data) => data.json())
+    .then((res) => console.log(res));
 });
+ 
+//для запуска json server нужно в терминале nps json-server db.json
